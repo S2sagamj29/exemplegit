@@ -18,7 +18,7 @@ public class APIController {
     ServiceAPI service;
 
     @GetMapping("/GetInfo")
-    public List<Info> getInfo(@RequestParam("category") String category , @RequestParam("code") String code){
+    public List<> getInfo(@RequestParam("category") String category , @RequestParam("code") String code){
 
         return service.getInfo(category,code);
     }
